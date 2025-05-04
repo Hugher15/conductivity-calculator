@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f2f5;
+        }
+        .icon {
+            width: 512px;
+            height: 512px;
+            background: #3498db;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .icon::before {
+            content: '';
+            width: 80%;
+            height: 80%;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .icon::after {
+            content: 'μS';
+            color: #3498db;
+            font-size: 200px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon"></div>
+</body>
+</html> 
